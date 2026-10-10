@@ -51,7 +51,7 @@ const GLYPHS: Record<ProfileKey, ReactNode> = {
   ),
 }
 
-export function StreamingApp({ strip }: { strip: ReactNode }) {
+export function StreamingApp() {
   const raw = useStored('lv')
   const viewed = useMemo<string[]>(() => {
     try {
@@ -75,7 +75,7 @@ export function StreamingApp({ strip }: { strip: ReactNode }) {
   return (
     <SoundProvider>
       <SheetsProvider onViewed={onViewed}>
-        <Page viewed={viewed} strip={strip} />
+        <Page viewed={viewed} />
       </SheetsProvider>
     </SoundProvider>
   )
@@ -131,7 +131,7 @@ function AppIcon({ k }: { k: string }) {
   )
 }
 
-function Page({ viewed, strip }: { viewed: string[]; strip: ReactNode }) {
+function Page({ viewed }: { viewed: string[] }) {
   const saved = useStored('fp')
   const [choosing, setChoosing] = useState(false)
   const scrolled = useScrolled(40)
@@ -325,8 +325,6 @@ function Page({ viewed, strip }: { viewed: string[]; strip: ReactNode }) {
           <p>Short notes from my team lead at Leadway and from a client, in their own words.</p>
           <Quotes />
         </section>
-
-        {strip}
 
         <section id="about">
           <img src="/images/photo.webp" alt="Portrait of Olufunbi Ibrahim" width={720} height={720} />

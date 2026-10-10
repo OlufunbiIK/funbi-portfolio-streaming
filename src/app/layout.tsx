@@ -3,20 +3,22 @@ import type { ReactNode } from 'react'
 import { Document, metadataBase } from '@/lib/layout'
 import '@/styles/streaming.css'
 
+const title = 'Olufunbi Ibrahim | Frontend developer in Abuja'
 const description =
-  'Olufunbi Ibrahim, frontend developer in Abuja. Insurance platforms, open source on Stellar, and event sites. Open to remote roles.'
+  "Hi, I'm Funbi. I turn long insurance forms into flows people finish, contribute to open source every month, and build event sites. Open to remote roles."
 
 export const metadata: Metadata = {
   metadataBase,
-  title: 'Olufunbi Ibrahim, frontend developer',
+  title,
   description,
   openGraph: {
-    title: 'Olufunbi Ibrahim, frontend developer',
+    title,
     description,
+    siteName: 'Olufunbi Ibrahim',
     type: 'website',
-    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'Olufunbi Ibrahim, frontend developer' }],
+    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'Olufunbi Ibrahim, frontend developer in Abuja' }],
   },
-  twitter: { card: 'summary_large_image', images: ['/og.jpg'] },
+  twitter: { card: 'summary_large_image', title, description, images: ['/og.jpg'] },
 }
 
 export const viewport: Viewport = {

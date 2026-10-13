@@ -17,7 +17,7 @@ export function BootSplash() {
   return (
     <>
       <div id="boot" className={hide ? 'hide' : ''} role="status" aria-live="polite">
-        <span className="bl">FUNBI</span>
+        <span className="bl">OLUFUNBI</span>
         <i className="bb">
           <b />
         </i>

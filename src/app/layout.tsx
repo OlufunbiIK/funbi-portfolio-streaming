@@ -5,7 +5,7 @@ import '@/styles/streaming.css'
 
 const title = 'Olufunbi Ibrahim | Frontend developer in Abuja'
 const description =
-  "Hi, I'm Funbi. I turn long insurance forms into flows people finish, contribute to open source every month, and build event sites. Open to remote roles."
+  "Hi, I'm Olufunbi. I turn long insurance forms into flows people finish, contribute to open source every month, and build event sites. Open to remote roles."
 
 export const metadata: Metadata = {
   metadataBase,

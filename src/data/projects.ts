@@ -19,7 +19,7 @@ export type Project = {
 
 export const PROJECTS: Record<string, Project> = {
   reel: {
-    name: 'The Funbi Reel',
+    name: 'The Olufunbi Reel',
     kind: 'Showreel',
     meta: 'A 34-second trailer, with voiceover',
     vid: 1,
@@ -204,6 +204,23 @@ export const PROJECTS: Record<string, Project> = {
       ['Live site', 'https://no-more-popcorm.vercel.app/', 1],
       ['GitHub', 'https://github.com/OlufunbiIK/no-more-popcorm'],
     ],
+  },
+  frootshive: {
+    nw: 1,
+    name: 'Frootshive feedback form',
+    kind: 'Client project',
+    meta: 'A branded form with automated emails',
+    img: 'froots',
+    c: ['#14532D', '#052E16'],
+    desc: 'A customised feedback and membership form for a fruit business. It submits to Google Forms, gives each customer a member number and member card, then sends thank-you, birthday and special-day emails automatically.',
+    pts: [
+      'Three-step form: About you, Your experience, Stay connected',
+      'Member number and member card generated on submit',
+      'Responses saved to Google Forms and Sheets',
+      'Apps Script emails: thank you, birthday, anniversary, new month and holidays',
+    ],
+    st: ['React', 'Vite', 'Google Forms', 'Apps Script'],
+    ln: [['Live site', 'https://frootshive.vercel.app/', 1]],
   },
   money: {
     name: 'Money Tracker',

@@ -226,7 +226,7 @@ function Page({ viewed }: { viewed: string[] }) {
 
       <nav id="nav" className={scrolled ? 's' : ''}>
         <a className="logo" href="#top">
-          FUNBI
+          OLUFUNBI
         </a>
         <div className="lk">
           <a href="#top">Home</a>
@@ -329,9 +329,9 @@ function Page({ viewed }: { viewed: string[] }) {
         <section id="about">
           <img src="/images/photo.webp" alt="Portrait of Olufunbi Ibrahim" width={720} height={720} />
           <div>
-            <h2>About Funbi</h2>
+            <h2>About Olufunbi</h2>
             <p className="hola" lang="es" style={{ marginBottom: 4 }}>
-              ¡Hola! Me llamo Funbi.
+              ¡Hola! Me llamo Olufunbi.
             </p>
             <p>
               Frontend developer at Leadway Assurance in Abuja since 2023. I turn long insurance forms into flows people

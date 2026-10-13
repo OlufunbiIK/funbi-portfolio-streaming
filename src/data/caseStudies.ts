@@ -19,9 +19,10 @@ export type CaseStudy = {
 
 export const EMM: [string, string] = ['Emmanuel Asunomeh', 'Team lead, Leadway Assurance']
 export const BRIDE: [string, string] = ['The bride', 'Wedding microsite client']
+export const FROOTS: [string, string] = ['Harobed', 'Frootshive client']
 export const QUOTES: [string, [string, string]][] = [
   ['You did a perfect work layout.', EMM],
-  ['Everybody will follow the pattern [based] on the design.', EMM],
+  ["It's perfect. I love it.", FROOTS],
   ["I've gone through it. You did a fantastic job my love.", BRIDE],
 ]
 export const CASE_STUDIES: Record<string, CaseStudy> = {
@@ -67,11 +68,7 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
         'In review, we found terms and conditions repeated in personal details when they are already accepted on the first page, so I removed the duplicate.',
       ],
     ],
-    result: [
-      'The work was merged after review, and the design became the reference for the rest of the team.',
-      '16 products now share the flow.',
-    ],
-    quote: 'Everybody will follow the pattern [based] on the design.',
+    result: ['The work was merged after review.', '16 products now share the flow.'],
   },
   vendor: {
     t: 'Vendor Bidding Portal',
@@ -145,7 +142,7 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
         'A chat widget on the quotation dashboard keeps support one click away while someone works a quote.',
       ],
     ],
-    result: ['The work was merged after review.', 'The layout became the pattern the rest of the team follows.'],
+    result: ['The work was merged after review.'],
     quote: 'You did a perfect work layout.',
   },
   general: {
@@ -402,6 +399,57 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
     ],
     result: ['The site is live and gives the host one link to share with guests.'],
     links: [['Live site', 'https://baby-shower-henna.vercel.app/', 1]],
+  },
+  frootshive: {
+    t: 'Frootshive feedback form',
+    sub: 'A branded form that keeps customers in touch',
+    facts: [
+      ['Role', 'Designer and developer'],
+      ['Client', 'Frootshive, a fruit business'],
+      ['Stack', 'React, Vite, Google Forms, Sheets, Apps Script'],
+      ['Status', 'Live'],
+    ],
+    problem: [
+      'Frootshive wanted to hear how customers found their fruit cups, bowls and baskets, and to know them well enough to celebrate their birthdays. A plain form would not feel like the brand, and sending messages by hand would not keep up as the list grew.',
+    ],
+    part: [
+      'Designed and built the form in React: three steps (About you, Your experience, Stay connected), mostly tap-to-answer, with optional bonus questions and a custom birthday picker.',
+      'Gave every customer a member number (such as FHL-0126) from a counter, and a member card on the thank-you page.',
+      'Connected the form to Google Forms, so every answer lands in a Google Sheet the owner already knows how to use.',
+      'Wrote the Apps Script automation: a thank-you email the moment someone submits, then birthday, anniversary, new-month and holiday emails.',
+    ],
+    dec: [
+      [
+        'Use Google Forms and Sheets as the back end',
+        'There is no server to run or pay for, and the owner can open every response in a sheet.',
+      ],
+      [
+        'Only write to people who said yes',
+        'Every email checks the updates question first, so customers who did not opt in are never emailed.',
+      ],
+      [
+        'Never send the same email twice',
+        'The script records what it has sent in extra columns of the sheet, so it can run every day without repeating itself.',
+      ],
+      [
+        'Stay inside the daily email limit',
+        'It checks the remaining quota before each send and stops cleanly, and a second day catches anyone who was missed.',
+      ],
+      [
+        'Send gift emails early',
+        "Valentine's Day, Mother's Day, Father's Day and Christmas emails go out several days before, so customers have time to order.",
+      ],
+      [
+        'Make it easy to change',
+        'Every occasion, date and message sits in one list with a name placeholder, and test functions send previews to the owner. Eid dates depend on moon sighting, so they are entered by hand each year. A 29 February birthday is sent on 28 February in other years.',
+      ],
+    ],
+    result: [
+      'The form is live. Customers get a thank-you email as soon as they submit, and messages on their birthday and on special days without anyone having to remember.',
+    ],
+    quote: "It's perfect. I love it.",
+    qby: FROOTS,
+    links: [['Live site', 'https://frootshive.vercel.app/', 1]],
   },
   popcorn: {
     t: 'No More Popcorn',

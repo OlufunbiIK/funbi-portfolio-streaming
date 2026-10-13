@@ -5,7 +5,7 @@ export const ROWS: Record<string, [string, string[]]> = {
   leadway: ['The day job: Leadway', ['portal', 'vendor', 'life', 'general']],
   oss: ['Open source, every month', ['stellarts', 'sentinel', 'xconfess', 'maint']],
   personal: ['Weekend projects', ['money', 'quiz', 'food', 'inno', 'meal']],
-  events: ['Eventlybuilt', ['wedding', 'shower', 'bday', 'popcorn']],
+  events: ['Client and event sites', ['frootshive', 'wedding', 'shower', 'bday', 'popcorn']],
   backend: ['Backend and APIs', ['manta', 'ecom', 'stark']],
 }
 
@@ -34,7 +34,7 @@ export const PROFILES: Record<ProfileKey, Profile> = {
     bg: '#6FBF73',
     hero: 'wedding',
     tag: 'For founders',
-    top: ['reel', 'wedding', 'bday', 'shower', 'inno', 'portal'],
+    top: ['reel', 'frootshive', 'wedding', 'bday', 'shower', 'inno', 'portal'],
     ord: ['events', 'personal', 'leadway', 'oss', 'backend'],
   },
   all: {
@@ -49,5 +49,5 @@ export const PROFILES: Record<ProfileKey, Profile> = {
 
 export const PROFILE_KEYS: ProfileKey[] = ['rec', 'eng', 'fnd', 'all']
 
-export const PHONE_GRID = ['nest', 'node', 'pg', 'mongo', 'fb', 'stellar', 'pay', 'ci', 'gh', 'vc']
+export const PHONE_GRID = ['nest', 'node', 'pg', 'mongo', 'fb', 'stellar', 'pay', 'ci', 'gh', 'vc', 'gas']
 export const PHONE_DOCK = ['react', 'nextjs', 'ts', 'tw']

@@ -1,6 +1,6 @@
 // The tools shown on the home-screen / greenhouse shelf, with the projects built with each.
 export const STACK: Record<string, [string, string, [string, string], string[]]> = {
-  react: ['React', 'Re', ['#38BDF8', '#0C4A6E'], ['portal', 'life', 'general', 'money', 'quiz', 'food']],
+  react: ['React', 'Re', ['#38BDF8', '#0C4A6E'], ['portal', 'life', 'general', 'money', 'quiz', 'food', 'frootshive']],
   nextjs: [
     'Next.js',
     'Nx',
@@ -22,6 +22,20 @@ export const STACK: Record<string, [string, string, [string, string], string[]]>
     'Vercel',
     'Vc',
     ['#E4E4E7', '#27272A'],
-    ['money', 'quiz', 'food', 'inno', 'meal', 'wedding', 'shower', 'bday', 'popcorn', 'xconfess', 'maint'],
+    [
+      'money',
+      'quiz',
+      'food',
+      'inno',
+      'meal',
+      'wedding',
+      'shower',
+      'bday',
+      'popcorn',
+      'xconfess',
+      'maint',
+      'frootshive',
+    ],
   ],
+  gas: ['Apps Script', 'Gs', ['#4285F4', '#1E3A8A'], ['frootshive']],
 }
